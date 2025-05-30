@@ -4,11 +4,11 @@ on:
   push:
     branches: ["main"] # Trigger
 
-  jobs:
-    deploy-codigo:
-      runs-on: ubuntu-latest
-      steps:
-        - run: echo "Hacemos pull del codigo"
-        - run: echo "Correr migraciones"
-        - run: echo "Generar binario"
-        - run: echo "Publicar version"
+jobs:
+  deploy-codigo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hacemos pull del codigo"
+      - run: echo "Correr migraciones"
+      - run: echo "Generar binario"
+      - run: echo "Publicar version"
